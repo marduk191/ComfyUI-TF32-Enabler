@@ -2,7 +2,7 @@
 
 Automatically enables TensorFloat-32 (TF32) acceleration for NVIDIA RTX 30/40/50 series GPUs in ComfyUI.
 
-**Now includes torch.compile CUDA allocator fix!**
+Note: to use torch compile you have to disable cudamallochasync
 
 ## 🚀 Performance Benefits
 
