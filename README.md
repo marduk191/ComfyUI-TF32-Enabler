@@ -33,23 +33,11 @@ It automatically configures the CUDA memory allocator for optimal torch.compile 
 
 ## 📦 Installation
 
-### Method 1: ComfyUI Manager (Recommended)
-1. Open ComfyUI Manager
-2. Search for "TF32 Enabler"
-3. Click Install
-4. Restart ComfyUI
-
-### Method 2: Manual Installation
 ```bash
 cd ComfyUI/custom_nodes
 git clone https://github.com/marduk191/ComfyUI-TF32-Enabler.git
 # Or download and extract the zip file
 ```
-
-### Method 3: Direct Download
-1. Download the latest release
-2. Extract to `ComfyUI/custom_nodes/ComfyUI-TF32-Enabler/`
-3. Restart ComfyUI
 
 ## ✅ Verification
 
@@ -103,12 +91,6 @@ Works with all ComfyUI workflows and custom nodes. No conflicts expected.
 ## 📝 License
 
 MIT License - See LICENSE file for details
-
-## 👤 Author
-
-**marduk191**
-- Specialized in AI model optimization and ComfyUI development
-- Optimizing workflows for RTX 5090 hardware
 
 ## 🤝 Contributing
 
