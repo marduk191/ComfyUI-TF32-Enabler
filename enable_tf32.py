@@ -66,6 +66,13 @@ def enable_tf32(verbose=True):
             else:
                 print("   ⚠️  CUDA not available")
             print("   ✅ torch.compile CUDA allocator fix applied")
+
+            try:
+                torch.set_float32_matmul_precision("high")  # "high" or "medium"
+                print(f"   ✅  float32 matmul precision = {torch.get_float32_matmul_precision()}\n")
+            except Exception as e:
+                print(f"   ⚠️   failed to set float32 matmul precision: {e}\n")
+
             print("=" * 60 + "\n")
         
         return True
